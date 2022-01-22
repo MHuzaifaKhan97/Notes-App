@@ -21,5 +21,14 @@ app.listen('3000',()=>{
 });
 
 
+Lecture 02: Connecting to MongoDB Atlas:
 
+- Goto MongoDB Website Signin with Google.
+- Create you cluster.
+- Create your Database User And ADD 0.0.0.0 in network access to access your database from anywhere.
+- Intall Mongoose => npm i mongoose
+- Now you mongodb with you app using connection string.
 
+Lecture 03: Creating Routes & Handling Data:
+
+- 
