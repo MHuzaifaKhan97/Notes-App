@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false })); // if true so we share nested object, else not
 app.use(bodyParser.json());
 
-const mongoDbPath = "mongodb+srv://huzaifanadir:qw4hddqcrg@cluster0.josya.mongodb.net/notesdb?retryWrites=true&w=majority"; 
+const mongoDbPath = "connection string"; 
 
 mongoose.connect(mongoDbPath).then(() => {
     console.log('Mongoose in running')

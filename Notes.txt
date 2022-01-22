@@ -31,4 +31,20 @@ Lecture 02: Connecting to MongoDB Atlas:
 
 Lecture 03: Creating Routes & Handling Data:
 
-- 
+Creating Modal:
+- Define Schema -> Notes: 1d, userid, title, content, date
+- Create Model -> <modal name><schema> 
+
+- npm i body-parser => to parse body to used post requests.
+- Create CRUD APIs.
+
+Lecture 04: Deploye backend on heroku:
+
+- git init
+- git add .
+- git commit -m ""
+- git push heroku master
+
+Lecture 05: Now Flutter Application
+
+
