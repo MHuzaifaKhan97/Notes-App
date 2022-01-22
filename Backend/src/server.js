@@ -8,7 +8,9 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false })); // if true so we share nested object, else not
 app.use(bodyParser.json());
 
-mongoose.connect("connection string").then(() => {
+const mongoDbPath = "mongodb+srv://huzaifanadir:qw4hddqcrg@cluster0.josya.mongodb.net/notesdb?retryWrites=true&w=majority"; 
+
+mongoose.connect(mongoDbPath).then(() => {
     console.log('Mongoose in running')
 
     app.get('/', async (req, res) => {
@@ -20,7 +22,7 @@ mongoose.connect("connection string").then(() => {
     app.use('/notes',noteRouter);
 });
 
-
-app.listen(5000, () => {
-    console.log('App is running');
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+    console.log(`App is running on ${PORT}`);
 })
